@@ -1800,7 +1800,7 @@ Argument type information is _not_ used in disambiguating calls.
 extern void f(in bit<8> x);
 extern void f(in bit<8> y); // allowed: different parameter names
 extern void f(in bit<16> x, in bit<8> y); // allowed: different number of parameters
-extern void f(in bit<16> x, in bit<8> x); // Error: duplicate declaration of previous function
+extern void f(in bit<16> x, in bit<8> y); // Error: duplicate declaration of previous function
 ----
 
 Notice that overloading of abstract methods, parsers, controls, or packages is
